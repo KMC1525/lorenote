@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoreNote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Lado Esquerdo: Página em Branco para Edição -->
+        <div class="left-panel">
+            <h1>LoreNote</h1>
+            
+            <label for="title">Title</label>
+            <textarea id="title" placeholder="Digite o título aqui..."></textarea>
+            
+            <label for="world">World</label>
+            <textarea id="world" placeholder="Descreva o mundo, regras, etc..."></textarea>
+            
+            <label for="places">Places</label>
+            <textarea id="places" placeholder="Descreva lugares, mapas, etc..."></textarea>
+            
+            <label for="characters">Characters</label>
+            <textarea id="characters" placeholder="Descreva personagens aqui..."></textarea>
+        </div>
+        
+        <!-- Lado Direito: Gerador de JSON -->
+        <div class="right-panel">
+            <h1>Generator</h1>
+            <pre id="json-output"></pre>
+            <button id="export-btn">Export</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
